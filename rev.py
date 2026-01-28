@@ -1,11 +1,17 @@
 '''write a program to  reverse number '''
 
-n=int(input("enter a number:"))
+def reverse(num):
+    rev=0
+    while num>0:
+        rev =rev*10+num%10
+        num//=10
+    return rev
 
-rev=0
+def isPalidrome(num):
+    return num==reverse(num)
 
-while n!=0:
-    r=n%10
-    r=(rev*10)+r
-    n=n//10
-    print(r,end='')   
+print(reverse(123))
+print(isPalidrome(123))
+print(reverse(121))
+print(isPalidrome(121))
+    

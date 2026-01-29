@@ -11,7 +11,7 @@ def isPalidrome(num):
     return num==reverse(num)
 
 print(reverse(1235))
-print(isPalidrome(123))
+print(isPalidrome(1239))
 print(reverse(121))
 print(isPalidrome(121))
 
